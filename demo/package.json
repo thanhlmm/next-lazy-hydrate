@@ -1,0 +1,44 @@
+{
+  "name": "next-ecommerce",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "ecommerce",
+    "nextjs",
+    "next"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "next": "^12.1.0",
+    "next-lazy-hydrate": "1.0.0",
+    "next-redux-wrapper": "^6.0.2",
+    "rc-slider": "^9.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^6.8.2",
+    "react-rater": "^5.1.1",
+    "react-redux": "^7.2.1",
+    "react-select": "^3.1.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "sass": "^1.26.10",
+    "swiper": "^6.5.1",
+    "swr": "^0.3.2",
+    "use-onclickoutside": "^0.3.1"
+  },
+  "devDependencies": {
+    "fslightbox-react": "^1.5.0",
+    "node-fetch": "^3.1.1"
+  }
+}

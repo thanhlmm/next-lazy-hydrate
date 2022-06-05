@@ -1,4 +1,4 @@
-# typescript-npm-package-template
+# next-lazy-hydrate
 
 > Template to kickstart creating a Node.js module using TypeScript and VSCode
 
@@ -7,10 +7,10 @@ Inspired by [node-module-boilerplate](https://github.com/sindresorhus/node-modul
 ## Features
 
 - [Semantic Release](https://github.com/semantic-release/semantic-release)
-- [Issue Templates](https://github.com/ryansonshine/typescript-npm-package-template/tree/main/.github/ISSUE_TEMPLATE)
-- [GitHub Actions](https://github.com/ryansonshine/typescript-npm-package-template/tree/main/.github/workflows)
+- [Issue Templates](https://github.com/thanhlmm/next-lazy-hydrate/tree/main/.github/ISSUE_TEMPLATE)
+- [GitHub Actions](https://github.com/thanhlmm/next-lazy-hydrate/tree/main/.github/workflows)
 - [Codecov](https://about.codecov.io/)
-- [VSCode Launch Configurations](https://github.com/ryansonshine/typescript-npm-package-template/blob/main/.vscode/launch.json)
+- [VSCode Launch Configurations](https://github.com/thanhlmm/next-lazy-hydrate/blob/main/.vscode/launch.json)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Husky](https://github.com/typicode/husky)
 - [Lint Staged](https://github.com/okonet/lint-staged)
@@ -28,7 +28,7 @@ Inspired by [node-module-boilerplate](https://github.com/sindresorhus/node-modul
 Alternatively, create a new directory and then run:
 
 ```bash
-curl -fsSL https://github.com/ryansonshine/typescript-npm-package-template/archive/main.tar.gz | tar -xz --strip-components=1
+curl -fsSL https://github.com/thanhlmm/next-lazy-hydrate/archive/main.tar.gz | tar -xz --strip-components=1
 ```
 
 Replace `FULL_NAME`, `GITHUB_USER`, and `REPO_NAME` in the script below with your own details to personalize your new package:
@@ -37,7 +37,7 @@ Replace `FULL_NAME`, `GITHUB_USER`, and `REPO_NAME` in the script below with you
 FULL_NAME="John Smith"
 GITHUB_USER="johnsmith"
 REPO_NAME="my-cool-package"
-sed -i.mybak "s/ryansonshine/$GITHUB_USER/g; s/typescript-npm-package-template\|my-package-name/$REPO_NAME/g; s/Ryan Sonshine/$FULL_NAME/g" package.json package-lock.json README.md
+sed -i.mybak "s/thanhlmm/$GITHUB_USER/g; s/next-lazy-hydrate\|my-package-name/$REPO_NAME/g; s/Ryan Sonshine/$FULL_NAME/g" package.json package-lock.json README.md
 rm *.mybak
 ```
 
@@ -101,16 +101,16 @@ Default: `rainbows`
 
 Lorem ipsum.
 
-[build-img]:https://github.com/ryansonshine/typescript-npm-package-template/actions/workflows/release.yml/badge.svg
-[build-url]:https://github.com/ryansonshine/typescript-npm-package-template/actions/workflows/release.yml
-[downloads-img]:https://img.shields.io/npm/dt/typescript-npm-package-template
-[downloads-url]:https://www.npmtrends.com/typescript-npm-package-template
-[npm-img]:https://img.shields.io/npm/v/typescript-npm-package-template
-[npm-url]:https://www.npmjs.com/package/typescript-npm-package-template
-[issues-img]:https://img.shields.io/github/issues/ryansonshine/typescript-npm-package-template
-[issues-url]:https://github.com/ryansonshine/typescript-npm-package-template/issues
-[codecov-img]:https://codecov.io/gh/ryansonshine/typescript-npm-package-template/branch/main/graph/badge.svg
-[codecov-url]:https://codecov.io/gh/ryansonshine/typescript-npm-package-template
+[build-img]:https://github.com/thanhlmm/next-lazy-hydrate/actions/workflows/release.yml/badge.svg
+[build-url]:https://github.com/thanhlmm/next-lazy-hydrate/actions/workflows/release.yml
+[downloads-img]:https://img.shields.io/npm/dt/next-lazy-hydrate
+[downloads-url]:https://www.npmtrends.com/next-lazy-hydrate
+[npm-img]:https://img.shields.io/npm/v/next-lazy-hydrate
+[npm-url]:https://www.npmjs.com/package/next-lazy-hydrate
+[issues-img]:https://img.shields.io/github/issues/thanhlmm/next-lazy-hydrate
+[issues-url]:https://github.com/thanhlmm/next-lazy-hydrate/issues
+[codecov-img]:https://codecov.io/gh/thanhlmm/next-lazy-hydrate/branch/main/graph/badge.svg
+[codecov-url]:https://codecov.io/gh/thanhlmm/next-lazy-hydrate
 [semantic-release-img]:https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-release-url]:https://github.com/semantic-release/semantic-release
 [commitizen-img]:https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
