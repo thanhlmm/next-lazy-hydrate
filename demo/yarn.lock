@@ -30,7 +30,7 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/runtime@^7.10.1", "@babel/runtime@^7.11.1", "@babel/runtime@^7.11.2", "@babel/runtime@^7.15.4", "@babel/runtime@^7.18.3", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.10.1", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.1", "@babel/runtime@^7.11.2", "@babel/runtime@^7.15.4", "@babel/runtime@^7.18.3", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.18.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.3.tgz#c7b654b57f6f63cf7f8b418ac9ca04408c4579f4"
   integrity sha512-38Y8f7YUhce/K7RMwTp7m0uCumpv9hZkitCbBClqQIow1qSbCvGkcegKOXpEWCQLfWmevgRiWokZ1GkpfhbZug==
@@ -412,6 +412,11 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==
 
+exenv@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
+  integrity sha512-Z+ktTxTwv9ILfgKCk32OX3n/doe+OcLTRtqK9pcL+JsP3J1/VW8Uvl4ZjLlKqeW4rzK4oesDOGMEMRIZqtP4Iw==
+
 fetch-blob@^3.1.2, fetch-blob@^3.1.4:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/fetch-blob/-/fetch-blob-3.1.5.tgz#0077bf5f3fcdbd9d75a0b5362f77dbb743489863"
@@ -566,8 +571,10 @@ nanoid@^3.1.30:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
   integrity sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==
 
-"next-lazy-hydrate@file:./..":
-  version "1.0.0"
+next-lazy-hydrate@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/next-lazy-hydrate/-/next-lazy-hydrate-1.0.1.tgz#16dec4896438e6f7f62bbfad408db2b38e2b87b3"
+  integrity sha512-vFjFZvf+xCgNxppH6Nvr16fobp1yeL6CEjXDGr+pmV/OzvImoTG0uGlCmrmT53OL0tcqiHwRPNYYyUTBGWo5uA==
 
 next-redux-wrapper@^6.0.2:
   version "6.0.2"
@@ -759,6 +766,14 @@ react-hook-form@^6.8.2:
   version "6.15.8"
   resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-6.15.8.tgz#725c139d308c431c4611e4b9d85a49f01cfc0e7a"
   integrity sha512-prq82ofMbnRyj5wqDe8hsTRcdR25jQ+B8KtCS7BLCzjFHAwNuCjRwzPuP4eYLsEBjEIeYd6try+pdLdw0kPkpg==
+
+react-hydration-on-demand@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-hydration-on-demand/-/react-hydration-on-demand-2.1.0.tgz#cec2dc2a5981d7872f41cd7fee3721577b7ed429"
+  integrity sha512-7zEudD1lffj0U24SFlvkQyFuuJN9/PQLJ5j1QOVwY20IbRmxnGWhLBm2rq9gIA38hjbYT33Y+aOZGZqwALWbTA==
+  dependencies:
+    "@babel/runtime" "^7.10.2"
+    exenv "^1.2.2"
 
 react-input-autosize@^3.0.0:
   version "3.0.0"
