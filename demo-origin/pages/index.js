@@ -3,8 +3,9 @@ import PageIntro from '../components/page-intro';
 import Featured from '../components/featured';
 import WhyUs from '../components/whyus';
 import ProductsFeatured from '../components/products-featured';
-import Footer from '../components/footer';
+import Animation from '../components/animation';
 import Subscribe from '../components/subscribe';
+import Footer from '../components/footer';
 
 const IndexPage = () => {
   return (
@@ -13,6 +14,7 @@ const IndexPage = () => {
       <Featured />
       <WhyUs />
       <ProductsFeatured />
+      <Animation />
       <Subscribe />
       <Footer />
     </Layout>

@@ -8,8 +8,9 @@ import lazyHydrate from 'next-lazy-hydrate';
 
 const WhyUs = lazyHydrate(() => import(/* webpackChunkName: "whyus" */'../components/whyus'));
 const ProductsFeatured = lazyHydrate(() => import(/* webpackChunkName: "product-featured" */'../components/products-featured'));
-const Footer = lazyHydrate(() => import(/* webpackChunkName: "footer" */'../components/footer'));
 const Subscribe = lazyHydrate(() => import(/* webpackChunkName: "subscribe" */'../components/subscribe'));
+const Animation = lazyHydrate(() => import(/* webpackChunkName: "animation" */'../components/animation'));
+const Footer = lazyHydrate(() => import(/* webpackChunkName: "footer" */'../components/footer'));
 
 const IndexPage = () => {
   return (
@@ -18,6 +19,7 @@ const IndexPage = () => {
       <Featured />
       <WhyUs />
       <ProductsFeatured />
+      <Animation />
       <Subscribe />
       <Footer />
     </Layout>
