@@ -9,7 +9,7 @@ Lazy load and hydrate component on demand. Deal with Nextjs performance without 
 
 | Before      | After |
 | ----------- | ----------- |
-| ![image](https://user-images.githubusercontent.com/9281080/172057721-dd9c7491-0a3b-4018-93e8-95115245e4c9.png)      | ![image](https://user-images.githubusercontent.com/9281080/172057767-518acf31-f9f7-4168-abcb-c889ed63e71c.png)       |
+| <img width="1079" alt="Screen Shot 2022-06-05 at 22 31 29" src="https://user-images.githubusercontent.com/9281080/172058282-fd2cb125-68c1-4d71-9ca8-5f13ba6c55ba.png">  |  <img width="1079" alt="Screen Shot 2022-06-05 at 22 31 19" src="https://user-images.githubusercontent.com/9281080/172058303-7e9d29ba-d83b-4189-b23b-74bb7a355001.png"> |
 | [https://next-lazy-hydrate-origin.vercel.app/](https://next-lazy-hydrate-origin.vercel.app/)  | [https://next-lazy-hydrate-optimized.vercel.app/](https://next-lazy-hydrate-optimized.vercel.app/) |
 | [Live check PageSpeed](https://pagespeed.web.dev/report?url=https%3A%2F%2Fnext-lazy-hydrate-origin.vercel.app%2F&form_factor=mobile) | [Live check PageSpeed](https://pagespeed.web.dev/report?url=https%3A%2F%2Fnext-lazy-hydrate-optimized.vercel.app%2F&form_factor=mobile)  |
 
