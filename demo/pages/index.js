@@ -1,11 +1,11 @@
 import Layout from '../layouts/Main';
 import PageIntro from '../components/page-intro';
+import Featured from '../components/featured';
 // import ProductsFeatured from '../components/products-featured';
 // import Footer from '../components/footer';
 // import Subscribe from '../components/subscribe';
 import lazyHydrate from 'next-lazy-hydrate';
 
-const Featured = lazyHydrate(() => import(/* webpackChunkName: "featured" */'../components/featured'));
 const WhyUs = lazyHydrate(() => import(/* webpackChunkName: "whyus" */'../components/whyus'));
 const ProductsFeatured = lazyHydrate(() => import(/* webpackChunkName: "product-featured" */'../components/products-featured'));
 const Footer = lazyHydrate(() => import(/* webpackChunkName: "footer" */'../components/footer'));
