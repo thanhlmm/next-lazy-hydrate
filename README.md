@@ -8,6 +8,16 @@ Lazy load and hydrate component on demand. Deal with Nextjs performance without 
 [![Issues][issues-img]][issues-url]
 [![Semantic Release][semantic-release-img]][semantic-release-url]
 
+
+
+https://user-images.githubusercontent.com/9281080/172057426-88394b3b-c259-4db0-b674-d996565fe9c2.mp4
+
+
+
+https://user-images.githubusercontent.com/9281080/172057438-4a3fed9c-b232-4d95-b1e4-e968910df667.mp4
+
+
+
 ## Install
 
 ```bash
@@ -19,8 +29,8 @@ npm install next-lazy-hydrate
 ```ts
 import lazyHydrate from 'next-lazy-hydrate';
 
-const WhyUs = lazyHydrate(() => import('../components/whyus'));
-const Footer = lazyHydrate(() => import('../components/footer'));
+const WhyUs = lazyHydrate(() => import('../components/whyus')); // Lazy hydrate when scroll into view
+const Footer = lazyHydrate(() => import('../components/footer', { on: ['hover'] })); // Lazy hydrate when users hover into the view
 
 const HomePage = () => {
   return (
@@ -45,6 +55,8 @@ Type: `() => Promise<React.ComponentType>`
 A function return `import()` in dynamic loading type
 
 #### options
+
+You can custom `on` to which event you'd like listen before hydrating start
 
 Refer to: https://github.com/valcol/react-hydration-on-demand#options
 
