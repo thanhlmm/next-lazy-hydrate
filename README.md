@@ -1,18 +1,21 @@
 # next-lazy-hydrate
-
-Lazy load and hydrate component on demand. Deal with Nextjs performance without compromise
-
 [![npm package][npm-img]][npm-url]
 [![Build Status][build-img]][build-url]
 [![Downloads][downloads-img]][downloads-url]
 [![Issues][issues-img]][issues-url]
 [![Semantic Release][semantic-release-img]][semantic-release-url]
 
+Lazy load and hydrate component on demand. Deal with Nextjs performance without compromise
+
+| Before      | After |
+| ----------- | ----------- |
+| ![image](https://user-images.githubusercontent.com/9281080/172057721-dd9c7491-0a3b-4018-93e8-95115245e4c9.png)      | ![image](https://user-images.githubusercontent.com/9281080/172057767-518acf31-f9f7-4168-abcb-c889ed63e71c.png)       |
+| [https://next-lazy-hydrate-origin.vercel.app/](https://next-lazy-hydrate-origin.vercel.app/)  | [https://next-lazy-hydrate-optimized.vercel.app/](https://next-lazy-hydrate-optimized.vercel.app/) |
+| [Live check PageSpeed](https://pagespeed.web.dev/report?url=https%3A%2F%2Fnext-lazy-hydrate-origin.vercel.app%2F&form_factor=mobile) | [Live check PageSpeed](https://pagespeed.web.dev/report?url=https%3A%2F%2Fnext-lazy-hydrate-optimized.vercel.app%2F&form_factor=mobile)  |
+
 
 
 https://user-images.githubusercontent.com/9281080/172057426-88394b3b-c259-4db0-b674-d996565fe9c2.mp4
-
-
 
 https://user-images.githubusercontent.com/9281080/172057438-4a3fed9c-b232-4d95-b1e4-e968910df667.mp4
 
