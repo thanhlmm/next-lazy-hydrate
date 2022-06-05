@@ -15,7 +15,7 @@
     "prepare": "husky install && install-peers",
     "semantic-release": "semantic-release",
     "test:watch": "jest --watch",
-    "test": "jest --coverage",
+    "test": "jest --coverage --passWithNoTests",
     "typecheck": "tsc --noEmit"
   },
   "repository": {
