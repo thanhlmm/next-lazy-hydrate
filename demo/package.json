@@ -19,7 +19,7 @@
     "@next/bundle-analyzer": "^12.1.6",
     "lodash": "^4.17.21",
     "next": "^12.1.0",
-    "next-lazy-hydrate": "^1.0.2",
+    "next-lazy-hydrate": "^1.0.3",
     "next-redux-wrapper": "^6.0.2",
     "rc-slider": "^9.3.1",
     "react": "^17.0.2",
