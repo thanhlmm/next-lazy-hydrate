@@ -665,10 +665,10 @@ nanoid@^3.1.30:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
   integrity sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==
 
-next-lazy-hydrate@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/next-lazy-hydrate/-/next-lazy-hydrate-1.0.2.tgz#7ab87c95f11d9489cda6fc65fbc7f1b494fbb670"
-  integrity sha512-1fFcp9b5/eU+2Ls+uzOCg0yq26gHbfNakwWo8W1L74Nr/BHIWAPsT+rKl1rPtu4gAXlhU8OlXzHuJW9HS0vjkQ==
+next-lazy-hydrate@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/next-lazy-hydrate/-/next-lazy-hydrate-1.0.3.tgz#04ab5a5e88de99eb4972ec71e229a59e4221397b"
+  integrity sha512-1GBbw1dVA/QNiuNFkRnvNRUwRzw42iDYpS41Qzn102n4LBCQccOgOsVIThr7jrNbkTvqUDlp7OxQtm/ar23BGg==
 
 next-redux-wrapper@^6.0.2:
   version "6.0.2"
