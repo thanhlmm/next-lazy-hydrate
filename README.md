@@ -6,7 +6,9 @@
 [![Issues][issues-img]][issues-url]
 [![Semantic Release][semantic-release-img]][semantic-release-url]
 
-Lazy load and hydrate component on demand. Deal with Nextjs performance without compromise
+Lazy load and hydrate component on demand. Deal with Nextjs performance without compromise.
+
+This package is heavily based on https://github.com/valcol/react-hydration-on-demand
 
 | Before                                                                                                                                                                 | After                                                                                                                                                                  |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
