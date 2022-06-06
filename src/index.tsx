@@ -5,7 +5,9 @@ import withHydrationOnDemand from './lazy-hydrate';
 let moduleId = 0; // Static counter
 export default function lazyLoadHydrate<T>(
   module: ILazyComponent<T>,
-  option: ILazyOption = {}
+  option: ILazyOption = {
+    on: [],
+  }
 ): React.ComponentType<ILazyComponentExtended<T>> {
   moduleId++;
   return withHydrationOnDemand({

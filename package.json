@@ -1,6 +1,6 @@
 {
   "name": "next-lazy-hydrate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A template for creating npm packages using TypeScript and VSCode",
   "main": "./lib/index.js",
   "files": [
