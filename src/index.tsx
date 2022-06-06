@@ -2,16 +2,10 @@
 import dynamic from 'next/dynamic';
 import withHydrationOnDemand from './lazy-hydrate';
 
-const defaultVisibleOption = () => ({
-  rootMargin: '50px',
-});
-
 let moduleId = 0; // Static counter
 export default function lazyLoadHydrate<T>(
   module: ILazyComponent<T>,
-  option: ILazyOption = {
-    on: [['visible', defaultVisibleOption]],
-  }
+  option: ILazyOption = {}
 ): React.ComponentType<ILazyComponentExtended<T>> {
   moduleId++;
   return withHydrationOnDemand({
