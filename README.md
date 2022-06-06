@@ -14,9 +14,13 @@ Lazy load and hydrate component on demand. Deal with Nextjs performance without 
 | [https://next-lazy-hydrate-origin.vercel.app/](https://next-lazy-hydrate-origin.vercel.app/)                                                                           | [https://next-lazy-hydrate-optimized.vercel.app/](https://next-lazy-hydrate-optimized.vercel.app/)                                                                     |
 | [Live check PageSpeed](https://pagespeed.web.dev/report?url=https%3A%2F%2Fnext-lazy-hydrate-origin.vercel.app%2F&form_factor=mobile)                                   | [Live check PageSpeed](https://pagespeed.web.dev/report?url=https%3A%2F%2Fnext-lazy-hydrate-optimized.vercel.app%2F&form_factor=mobile)                                |
 
-https://user-images.githubusercontent.com/9281080/172057426-88394b3b-c259-4db0-b674-d996565fe9c2.mp4
+
+
+https://user-images.githubusercontent.com/9281080/172079813-a49db8c0-c64d-4589-941d-bf027b22433a.mov
 
 https://user-images.githubusercontent.com/9281080/172057438-4a3fed9c-b232-4d95-b1e4-e968910df667.mp4
+
+[Read more about Progressvive Hydrate here](https://www.patterns.dev/posts/progressive-hydration/)
 
 ## Install
 
