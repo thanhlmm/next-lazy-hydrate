@@ -12,11 +12,12 @@
     "cm": "cz",
     "coverage": "codecov",
     "lint": "eslint ./src/ --fix",
-    "prepare": "husky install && install-peers",
+    "prepare": "husky install",
     "semantic-release": "semantic-release",
     "test:watch": "jest --watch",
     "test": "jest --coverage --passWithNoTests",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "install-peers": "install-peers"
   },
   "repository": {
     "type": "git",
