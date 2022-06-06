@@ -20,7 +20,7 @@ https://user-images.githubusercontent.com/9281080/172079813-a49db8c0-c64d-4589-9
 
 https://user-images.githubusercontent.com/9281080/172057438-4a3fed9c-b232-4d95-b1e4-e968910df667.mp4
 
-[Read more about Progressvive Hydrate here](https://www.patterns.dev/posts/progressive-hydration/)
+[Read more about Progressive Hydrate here](https://www.patterns.dev/posts/progressive-hydration/)
 
 ## Install
 
