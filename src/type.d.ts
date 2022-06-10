@@ -5,13 +5,18 @@ type IEvent = 'delay' | 'visible' | 'idle' | keyof HTMLElementEventMap;
 type IEventOption = IEvent | [IEvent, any];
 type IWrapperProps = Record<string, any> | JSX.IntrinsicElements['section'];
 
-interface ILazyOption {
+interface IHydrateOption {
   on?: IEventOption[];
   onBefore?: () => Promise<any>;
   whenInputPending?: boolean;
   isInputPendingFallbackValue?: boolean;
   disableFallback?: boolean;
   wrapperProps?: IWrapperProps;
+  compatibleMode?: boolean;
+}
+
+interface ILazyOption extends IHydrateOption {
+  loading?: (any) => JSX.Element | null;
 }
 
 type ILazyComponent<T> = LoaderComponent<T>;

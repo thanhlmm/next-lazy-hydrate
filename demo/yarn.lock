@@ -582,6 +582,11 @@ import-fresh@^3.1.0:
     parent-module "^1.0.0"
     resolve-from "^4.0.0"
 
+intersection-observer@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.12.0.tgz#6c84628f67ce8698e5f9ccf857d97718745837aa"
+  integrity sha512-2Vkz8z46Dv401zTWudDGwO7KiGHNDkMv417T5ItcNYfmvHR/1qCTVBO9vwH8zZmQ0WkA/1ARwpysR9bsnop4NQ==
+
 is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
@@ -665,10 +670,10 @@ nanoid@^3.1.30:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
   integrity sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==
 
-next-lazy-hydrate@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/next-lazy-hydrate/-/next-lazy-hydrate-1.0.3.tgz#04ab5a5e88de99eb4972ec71e229a59e4221397b"
-  integrity sha512-1GBbw1dVA/QNiuNFkRnvNRUwRzw42iDYpS41Qzn102n4LBCQccOgOsVIThr7jrNbkTvqUDlp7OxQtm/ar23BGg==
+next-lazy-hydrate@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/next-lazy-hydrate/-/next-lazy-hydrate-1.0.4.tgz#b740a98c515947dc07c271a156aa6f102c13f566"
+  integrity sha512-nBDl5I9LnX1GSZTq0M4PlZYc61eOae1jS6itMcYk7Z2fVvViEKDMaufqMdyKqzAZECHLN4xlob49jYfCKJp3Mg==
 
 next-redux-wrapper@^6.0.2:
   version "6.0.2"

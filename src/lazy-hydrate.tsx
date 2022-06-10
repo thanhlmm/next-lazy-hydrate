@@ -28,6 +28,7 @@ SOFTWARE.
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import React, { useState, useRef, useEffect, useLayoutEffect } from 'react';
+import ReactDOM from 'react-dom';
 
 const isClientSide = typeof window !== 'undefined';
 
@@ -44,8 +45,8 @@ const getDisplayName = (WrappedComponent: React.ComponentType) => {
 };
 
 const withHydrationOnDemandServerSide =
-  ({ wrapperProps }: ILazyOption) =>
-  (WrappedComponent: React.ComponentType) =>
+  ({ wrapperProps }: IHydrateOption) =>
+  (WrappedComponent: any) =>
   ({ ...props }) =>
     (
       <section data-hydration-on-demand={true} {...wrapperProps}>
@@ -61,8 +62,9 @@ const withHydrationOnDemandClientSide =
     onBefore,
     whenInputPending = false,
     wrapperProps,
-  }: ILazyOption) =>
-  (WrappedComponent: React.ComponentType) => {
+    compatibleMode,
+  }: IHydrateOption) =>
+  (WrappedComponent: any) => {
     const WithHydrationOnDemand = ({ forceHydration = false, ...props }) => {
       const rootRef = useRef<HTMLElement>(null);
       const cleanupFunctions = useRef<AnyFunction[]>([]);
@@ -90,10 +92,19 @@ const withHydrationOnDemandClientSide =
         cleanUp();
         if (isHydrated) return;
 
+        let result = null;
         if (onBefore) {
-          await onBefore();
+          result = (await onBefore()).default;
         }
         setIsHydrated(true);
+        const el = rootRef.current;
+        if (!compatibleMode && result) {
+          if (el) {
+            const action = el.hasChildNodes() ? 'hydrate' : 'render';
+            ReactDOM[action](React.createElement(result, props), el);
+          }
+          return;
+        }
       };
 
       const initDOMEvent = (
@@ -212,10 +223,21 @@ const withHydrationOnDemandClientSide =
           />
         );
 
+      if (isHydrated && compatibleMode) {
+        return (
+          <section {...wrapperProps}>
+            <WrappedComponent {...props} />
+          </section>
+        );
+      }
+
       return (
-        <section {...wrapperProps}>
-          <WrappedComponent {...props} />
-        </section>
+        <section
+          ref={rootRef}
+          dangerouslySetInnerHTML={{ __html: '' }}
+          suppressHydrationWarning
+          {...wrapperProps}
+        />
       );
     };
 
@@ -225,7 +247,7 @@ const withHydrationOnDemandClientSide =
 
     return WithHydrationOnDemand;
   };
-const withHydrationOnDemand = (options: ILazyOption = {}) => {
+const withHydrationOnDemand = (options: IHydrateOption = {}) => {
   if (isClientSide) return withHydrationOnDemandClientSide(options);
 
   return withHydrationOnDemandServerSide(options);
