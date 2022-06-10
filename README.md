@@ -145,6 +145,8 @@ export default class App extends React.Component {
 
 Force the hydration of the component.
 
+Explore my project 🤩: https://thanhle.blog/en/project
+
 ##### postfix
 
 Type: `string`
