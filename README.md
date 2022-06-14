@@ -8,6 +8,10 @@
 
 Lazy load and hydrate component on demand. Deal with Nextjs performance without compromise.
 
+## Feature
+- Render component in SSR (Good for SEO)
+- Only load and hydrate when needed (Good for page Speed)
+
 This package is heavily based on https://github.com/valcol/react-hydration-on-demand
 
 | Before                                                                                                                                                                 | After                                                                                                                                                                  |
@@ -147,12 +151,6 @@ Force the hydration of the component.
 
 Explore my project 🤩: https://thanhle.blog/en/project
 
-##### postfix
-
-Type: `string`
-Default: `rainbows`
-
-Lorem ipsum.
 
 [build-img]: https://github.com/thanhlmm/next-lazy-hydrate/actions/workflows/release.yml/badge.svg
 [build-url]: https://github.com/thanhlmm/next-lazy-hydrate/actions/workflows/release.yml
