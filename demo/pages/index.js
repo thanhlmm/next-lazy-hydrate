@@ -3,7 +3,7 @@ import PageIntro from '../components/page-intro';
 // import Featured from '../components/featured';
 // import ProductsFeatured from '../components/products-featured';
 // import Footer from '../components/footer';
-import lazyHydrate from '../../lib/index';
+import lazyHydrate from 'next-lazy-hydrate';
 
 const Featured = lazyHydrate(() => import(/* webpackChunkName: "featured" */'../components/featured'), {
   on: [['visible', () => ({ rootMargin: '50px' })]],
