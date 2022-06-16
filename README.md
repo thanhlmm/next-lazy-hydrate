@@ -98,6 +98,11 @@ Support [all DOM events](https://developer.mozilla.org/en-US/docs/Web/Events) an
 | **visible**                                                               | `getOptions: Function` who return an [intersectionObserver options](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver) object (default: no options) | Requires IntersectionObserver. **Polyfill not included.** If unsupported the component is directy hydrated.                    |
 | **idle**                                                                  |                                                                                                                                                                         | Requires requestIdleCallback. **Polyfill not included.** If unsupported the component will be hydrated with a delay of 2000ms. |
 
+### `compatibleMode: Boolean` (optional, default: false)
+Set it to true if your component use Context.
+
+**Rule of thumb: If the component render error, turn `compatibleMode = true;`**
+
 ### `whenInputPending: Boolean` (optional, default: false)
 
 When set to true use `navigator.scheduling.isInputPending` to check if there is a pending user input on mount. If that's the case, hydration will be delayed using the strategies defined in the `on` option to allow the browser to handle the user input.
