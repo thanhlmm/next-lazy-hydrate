@@ -10,9 +10,12 @@ Lazy load and hydrate component on demand. Deal with Nextjs performance without 
 
 ## Feature
 - Render component in SSR (Good for SEO)
-- Only load and hydrate when needed (Good for page Speed)
+- Only load JS bundle and hydrate when needed (Good for page Speed)
 
 This package is heavily based on https://github.com/valcol/react-hydration-on-demand
+
+![Next lazy hydrate](https://user-images.githubusercontent.com/9281080/174553848-b4fe5a9a-7dd0-4458-8cf2-4af4788be87c.png)
+
 
 | Before                                                                                                                                                                 | After                                                                                                                                                                  |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -20,9 +23,6 @@ This package is heavily based on https://github.com/valcol/react-hydration-on-de
 | [https://next-lazy-hydrate-origin.vercel.app/](https://next-lazy-hydrate-origin.vercel.app/)                                                                           | [https://next-lazy-hydrate-optimized.vercel.app/](https://next-lazy-hydrate-optimized.vercel.app/)                                                                     |
 | [Live check PageSpeed](https://pagespeed.web.dev/report?url=https%3A%2F%2Fnext-lazy-hydrate-origin.vercel.app%2F&form_factor=mobile)                                   | [Live check PageSpeed](https://pagespeed.web.dev/report?url=https%3A%2F%2Fnext-lazy-hydrate-optimized.vercel.app%2F&form_factor=mobile)                                |
 
-
-
-https://user-images.githubusercontent.com/9281080/172079813-a49db8c0-c64d-4589-941d-bf027b22433a.mov
 
 [Read more about Islands Architecture here](https://www.patterns.dev/posts/islands-architecture/)
 
